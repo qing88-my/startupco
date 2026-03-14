@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StartupCo</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+html{
+scroll-behavior:smooth;
+}
+</style>
+
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+<!-- NAVBAR -->
+
+<header class="bg-white/80 backdrop-blur-md shadow sticky top-0 z-50">
+
+<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+<h1 class="text-xl font-bold text-indigo-600">StartupCo</h1>
+
+<!-- Desktop Menu -->
+
+<nav class="space-x-6 hidden md:block">
+<a href="#" class="text-gray-600 hover:text-indigo-600">Home</a>
+<a href="#features" class="text-gray-600 hover:text-indigo-600">Features</a>
+<a href="#pricing" class="text-gray-600 hover:text-indigo-600">Pricing</a>
+<a href="#contact" class="text-gray-600 hover:text-indigo-600">Contact</a>
+</nav>
+
+<!-- Mobile Button -->
+
+<button onclick="toggleMenu()" class="md:hidden">
+
+<svg xmlns="http://www.w3.org/2000/svg"
+class="h-6 w-6"
+fill="none"
+viewBox="0 0 24 24"
+stroke="currentColor">
+
+<path stroke-linecap="round"
+stroke-linejoin="round"
+stroke-width="2"
+d="M4 6h16M4 12h16M4 18h16" />
+
+</svg>
+
+</button>
+
+</div>
+
+<!-- Mobile Menu -->
+
+<div id="mobileMenu" class="hidden px-6 pb-4 md:hidden space-y-2">
+
+<a href="#" class="block text-gray-600">Home</a> <a href="#features" class="block text-gray-600">Features</a> <a href="#pricing" class="block text-gray-600">Pricing</a> <a href="#contact" class="block text-gray-600">Contact</a>
+
+</div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="relative bg-gradient-to-br from-indigo-600 via-purple-600 to-blue-500 text-white py-28 overflow-hidden">
+
+<!-- Animated blobs -->
+
+<div class="absolute w-96 h-96 bg-purple-500 rounded-full blur-3xl opacity-30 animate-pulse -top-20 -left-20"></div>
+<div class="absolute w-96 h-96 bg-blue-500 rounded-full blur-3xl opacity-30 animate-pulse top-40 right-0"></div>
+
+<div class="relative max-w-7xl mx-auto px-6 text-center" data-aos="fade-up">
+
+<h2 class="text-5xl md:text-6xl font-bold mb-6">
+Build Your Business Faster
+</h2>
+
+<p class="text-lg mb-10 opacity-90 max-w-2xl mx-auto">
+Launch a modern website quickly with beautiful design and powerful features.
+</p>
+
+<a class="bg-white text-indigo-600 px-8 py-3 rounded-xl font-semibold shadow hover:shadow-xl hover:scale-105 transition">
+Get Started
+</a>
+
+</div>
+
+</section>
+
+<!-- FEATURES -->
+
+<section id="features" class="py-24">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<h3 class="text-3xl font-bold text-center mb-14" data-aos="fade-up">
+Features
+</h3>
+
+<div class="grid md:grid-cols-3 gap-10">
+
+<div class="bg-white/80 backdrop-blur-lg p-6 rounded-2xl shadow-lg hover:shadow-xl transition" data-aos="fade-up">
+
+<div class="text-indigo-600 mb-4">
+
+<svg xmlns="http://www.w3.org/2000/svg"
+class="h-10 w-10"
+fill="none"
+viewBox="0 0 24 24"
+stroke="currentColor">
+
+<path stroke-linecap="round"
+stroke-linejoin="round"
+stroke-width="2"
+d="M13 10V3L4 14h7v7l9-11h-7z"/>
+
+</svg>
+
+</div>
+
+<h4 class="text-xl font-semibold mb-2">Fast Performance</h4>
+
+<p class="text-gray-600">
+Optimized design ensures fast load times and smooth experience.
+</p>
+
+</div>
+
+<div class="bg-white/80 backdrop-blur-lg p-6 rounded-2xl shadow-lg hover:shadow-xl transition" data-aos="fade-up">
+
+<div class="text-indigo-600 mb-4">
+
+<svg xmlns="http://www.w3.org/2000/svg"
+class="h-10 w-10"
+fill="none"
+viewBox="0 0 24 24"
+stroke="currentColor">
+
+<path stroke-linecap="round"
+stroke-linejoin="round"
+stroke-width="2"
+d="M9.75 17L15 12l-5.25-5"/>
+
+</svg>
+
+</div>
+
+<h4 class="text-xl font-semibold mb-2">Responsive Design</h4>
+
+<p class="text-gray-600">
+Looks perfect on mobile, tablet and desktop devices.
+</p>
+
+</div>
+
+<div class="bg-white/80 backdrop-blur-lg p-6 rounded-2xl shadow-lg hover:shadow-xl transition" data-aos="fade-up">
+
+<div class="text-indigo-600 mb-4">
+
+<svg xmlns="http://www.w3.org/2000/svg"
+class="h-10 w-10"
+fill="none"
+viewBox="0 0 24 24"
+stroke="currentColor">
+
+<path stroke-linecap="round"
+stroke-linejoin="round"
+stroke-width="2"
+d="M12 8c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3z"/>
+
+</svg>
+
+</div>
+
+<h4 class="text-xl font-semibold mb-2">Easy Customization</h4>
+
+<p class="text-gray-600">
+Modify layouts, colors and content quickly to match your brand.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="bg-white py-24">
+
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+<img
+src="https://images.unsplash.com/photo-1557804506-669a67965ba0"
+class="rounded-2xl shadow-lg"
+data-aos="fade-right"
+
+>
+
+<div data-aos="fade-left">
+
+<h3 class="text-3xl font-bold mb-4">
+About Our Company
+</h3>
+
+<p class="text-gray-600 mb-4">
+We help businesses build modern digital experiences using powerful web technologies.
+Our mission is to make website creation faster and more affordable.
+</p>
+
+<p class="text-gray-600">
+Thousands of startups trust our platform to launch and grow online.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PRICING -->
+
+<section id="pricing" class="py-24">
+
+<div class="max-w-6xl mx-auto px-6 text-center">
+
+<h3 class="text-3xl font-bold mb-14">
+Pricing
+</h3>
+
+<div class="grid md:grid-cols-3 gap-10">
+
+<div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition">
+
+<h4 class="text-xl font-semibold mb-2">Starter</h4>
+
+<p class="text-4xl font-bold mb-4">$29</p>
+
+<p class="text-gray-600 mb-6">
+Perfect for small businesses
+</p>
+
+<button class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700">
+Choose Plan
+</button>
+
+</div>
+
+<div class="bg-indigo-600 text-white p-8 rounded-2xl shadow-xl scale-105">
+
+<h4 class="text-xl font-semibold mb-2">Pro</h4>
+
+<p class="text-4xl font-bold mb-4">$79</p>
+
+<p class="mb-6 opacity-90">
+Best for growing startups
+</p>
+
+<button class="bg-white text-indigo-600 px-6 py-2 rounded-lg">
+Choose Plan
+</button>
+
+</div>
+
+<div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl transition">
+
+<h4 class="text-xl font-semibold mb-2">Enterprise</h4>
+
+<p class="text-4xl font-bold mb-4">$149</p>
+
+<p class="text-gray-600 mb-6">
+Advanced features for teams
+</p>
+
+<button class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700">
+Choose Plan
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TESTIMONIALS -->
+
+<section class="bg-gray-100 py-24">
+
+<div class="max-w-6xl mx-auto px-6 text-center">
+
+<h3 class="text-3xl font-bold mb-14">
+What Clients Say
+</h3>
+
+<div class="grid md:grid-cols-3 gap-10">
+
+<div class="bg-white p-6 rounded-2xl shadow">
+
+<p class="text-gray-600 mb-4">
+"This platform helped us launch our website in days."
+</p>
+
+<div class="flex items-center justify-center space-x-3">
+
+<img src="https://randomuser.me/api/portraits/women/44.jpg"
+class="w-10 h-10 rounded-full">
+
+<h5 class="font-semibold">Sarah Johnson</h5>
+
+</div>
+
+</div>
+
+<div class="bg-white p-6 rounded-2xl shadow">
+
+<p class="text-gray-600 mb-4">
+"Beautiful design and very easy to customize."
+</p>
+
+<div class="flex items-center justify-center space-x-3">
+
+<img src="https://randomuser.me/api/portraits/men/32.jpg"
+class="w-10 h-10 rounded-full">
+
+<h5 class="font-semibold">Michael Chen</h5>
+
+</div>
+
+</div>
+
+<div class="bg-white p-6 rounded-2xl shadow">
+
+<p class="text-gray-600 mb-4">
+"Perfect for startups who want professional websites fast."
+</p>
+
+<div class="flex items-center justify-center space-x-3">
+
+<img src="https://randomuser.me/api/portraits/women/65.jpg"
+class="w-10 h-10 rounded-full">
+
+<h5 class="font-semibold">Emma Wilson</h5>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="py-24">
+
+<div class="max-w-xl mx-auto px-6 text-center">
+
+<h3 class="text-3xl font-bold mb-6">
+Contact Us
+</h3>
+
+<form class="space-y-4">
+
+<input
+type="text"
+placeholder="Your Name"
+class="w-full border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none">
+
+<input
+type="email"
+placeholder="Email Address"
+class="w-full border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none">
+
+<textarea
+placeholder="Message"
+class="w-full border border-gray-300 p-3 rounded-lg h-32 focus:ring-2 focus:ring-indigo-500 outline-none"></textarea>
+
+<button
+class="bg-indigo-600 text-white px-6 py-3 rounded-lg w-full hover:bg-indigo-700">
+Send Message </button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="bg-gray-900 text-gray-400 py-12">
+
+<div class="max-w-7xl mx-auto px-6 text-center">
+
+<p class="mb-4">
+© 2026 StartupCo. All rights reserved.
+</p>
+
+<p class="text-sm">
+Built with Tailwind CSS
+</p>
+
+</div>
+
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+duration:1000,
+once:true
+})
+
+function toggleMenu(){
+const menu = document.getElementById("mobileMenu");
+menu.classList.toggle("hidden");
+}
+</script>
+
+</body>
+</html>
